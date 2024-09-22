@@ -77,7 +77,7 @@ const askQuestions = (questions) => {
 // TODO: Create a function to initialize app
 function init() {
   // ask user questions
-  askQuestions();
+  askQuestions(questions);
 }
 
 // Function call to initialize app
