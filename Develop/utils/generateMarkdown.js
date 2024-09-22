@@ -16,7 +16,7 @@ function generateMarkdown(data) {
 
 `;
 }
-
+// headings and structure of readme file taken from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 const generateMarkdown = (data) => {
   return `# ${data.title}
   ## Description
