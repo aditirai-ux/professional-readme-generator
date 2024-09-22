@@ -58,12 +58,17 @@ function writeToFile(fileName, data) {
     err ? console.error(err) : console.log("Successfully created ReadMe!")
   );
 }
+const generateReadMe = (answers) => {
+    return
+};
 
 const askQuestions = (questions) => {
   inquirer
     .prompt([questions])
     .then((answers) => {
-      console.log(answers);
+      //   console.log(answers);
+      const readme = generateReadMe(answers);
+      writeToFile("README.md", readme);
     })
     .catch((error) => {
       if (error.isTtyError) {
