@@ -35,12 +35,12 @@ const questions = [
   //   message: "What are the test instructions?",
   //   name: "test",
   // },
-  // {
-  //   type: "list",
-  //   message: "What license are you using?",
-  //   name: "license",
-  //   choices: ["MIT", "GNU GPLv3", "Apache 2.0", "ISC", "None"],
-  // },
+  {
+    type: "list",
+    message: "What license are you using?",
+    name: "license",
+    choices: ["MIT", "GNU GPLv3", "Apache 2.0", "ISC", "None"],
+  },
   // {
   //   type: "input",
   //   message: "What is your GitHub username?",
@@ -54,26 +54,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) =>
+function writeToFile(fileName, answers) {
+  fs.writeFile(fileName, answers, (err) =>
     err ? console.error(err) : console.log("Successfully created ReadMe!")
   );
 }
 
 const askQuestions = (questions) => {
   inquirer
-    .prompt([questions])
+    .prompt(questions)
     .then((answers) => {
       //   console.log(answers);
       const readme = generateMarkdown(answers);
       writeToFile("README.md", readme);
     })
     .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else went wrong
-      }
+      console.log(error.isTtyError);
     });
 };
 

@@ -10,27 +10,26 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "MIT") {
-    return `## License
-    This project is licensed under the MIT license.`;
+    return `This project is licensed under the MIT license.`;
   } else if (license === "GNU GPLv3") {
-    return `## License
-    This project is licensed under the GNU GPLv3 license.`;
+    return `This project is licensed under the GNU GPLv3 license.`;
   } else if (license === "Apache 2.0") {
-    return `## License
-    This project is licensed under the Apache 2.0 license.`;
+    return `This project is licensed under the Apache 2.0 license.`;
   } else if (license === "ISC") {
-    return `## License
-    This project is licensed under the ISC license.`;
+    return `This project is licensed under the ISC license.`;
   } else {
     return "";
   }
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(questions) {
+  return `# Title 
+  ${questions.title}
   ## Description
-  ${data.description}`;
+  ${questions.description};
+  ##License
+  ${renderLicenseSection(questions.license)};`;
 }
 // // headings and structure of readme file taken from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 // const generateMarkdown = (data) => {
@@ -40,8 +39,8 @@ function generateMarkdown(data) {
 //   ## Installation
 //   ${data.installation}
 //   * [Usage](#usage)
-//   * [License]
-//   * ${renderLicenseSection(license)}
+//   ##License
+// * ${renderLicenseSection(license)};
 //   * [Contributing](#contributing)
 //   * [Tests](#tests)
 //   * [Questions](#questions)
