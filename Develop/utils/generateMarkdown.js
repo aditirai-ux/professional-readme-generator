@@ -1,5 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// Reference for license badge and links: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
@@ -47,33 +48,32 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+// headings and structure of readme file taken from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 function generateMarkdown(questions) {
   return `
   # ${questions.title}
   ## Description
   ${questions.description};
+  ## Table of Contents
+    - Installation
+    - Usage
+    - Credits
+    - License
+  ## Installation
+  ${questions.installation}
+  ## Usage 
+  ${questions.usage}
+  ## Credits
+   This project was created by ${
+     questions.contribution
+   } for the CU Coding Bootcamp.
   ## License
   ${renderLicenseSection(questions.license)};
   ${renderLicenseBadge(questions.license)};
-  ${renderLicenseLink(questions.license)};`;
+  ${renderLicenseLink(questions.license)};
+  ## Contact
+    - GitHub: ${questions.github}
+    - Email: ${questions.email}`;
 }
-// // headings and structure of readme file taken from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-// const generateMarkdown = (data) => {
-//   return `# ${data.title}
-//   ## Description
-//   ${data.description}
-//   ## Installation
-//   ${data.installation}
-//   * [Usage](#usage)
-//   ##License
-// * ${renderLicenseSection(license)};
-//   * [Contributing](#contributing)
-//   * [Tests](#tests)
-//   * [Questions](#questions)
-//   * [Contact](#contact)
-//   * [Credits](#credits)
-//   * [Badges](#badges)
-//   * [Features](#features)`;
-// };
 
 export default generateMarkdown;
