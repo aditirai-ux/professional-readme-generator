@@ -15,42 +15,42 @@ const questions = [
     message: "What is the description of your project?",
     name: "description",
   },
-  // {
-  //   type: "input",
-  //   message: "What are the installation instructions?",
-  //   name: "installation",
-  // },
-  // {
-  //   type: "input",
-  //   message: "What is the usage information?",
-  //   name: "usage",
-  // },
-  // {
-  //   type: "input",
-  //   message: "What are the contribution guidelines?",
-  //   name: "contribution",
-  // },
-  // {
-  //   type: "input",
-  //   message: "What are the test instructions?",
-  //   name: "test",
-  // },
+  {
+    type: "input",
+    message: "What are the installation instructions?",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "What is the usage information?",
+    name: "usage",
+  },
+  {
+    type: "input",
+    message: "What are the contribution guidelines?",
+    name: "contribution",
+  },
+  {
+    type: "input",
+    message: "What are the test instructions?",
+    name: "test",
+  },
   {
     type: "list",
     message: "What license are you using?",
     name: "license",
     choices: ["MIT", "GNU GPLv3", "Apache 2.0", "ISC", "None"],
   },
-  // {
-  //   type: "input",
-  //   message: "What is your GitHub username?",
-  //   name: "github",
-  // },
-  // {
-  //   type: "input",
-  //   message: "What is your email address?",
-  //   name: "email",
-  // },
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
+  },
 ];
 
 // TODO: Create a function to write README file
