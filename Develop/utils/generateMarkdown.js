@@ -55,19 +55,23 @@ function generateMarkdown(questions) {
   ## Description
   ${questions.description};
   ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [License](#license)
-    - [Questions](#questions)
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
+    
   ## Installation
   ${questions.installation}
   ## Usage 
   ${questions.usage}
   ## Credits
-   This project was created by ${questions.credit} for the CU Coding Bootcamp.
+   This project was created by ${
+     questions.credit
+   } for the CU Coding Bootcamp. The headings and structure of readme file has been taken from: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide. Reference for license badge and links is: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba.
   ## Contributing
   ${questions.contribution}
   ## Tests
@@ -78,8 +82,8 @@ function generateMarkdown(questions) {
   ${renderLicenseLink(questions.license)};
   ## Questions
   If you have any further questions, please contact me at:
-    - GitHub:(#${questions.github})
-    - Email: ${questions.email}`;
+  - GitHub: [Github Profile] ${questions.github}
+  - Email: ${questions.email}`;
 }
 
 export default generateMarkdown;
