@@ -44,5 +44,5 @@ This project is licensed under the Apache 2.0 license.;
 
 If you have any further questions, please contact me at:
 
-- GitHub: [aditirai-ux]
+- GitHub: [aditirai-ux](https://github.com/aditirai-ux/professional-readme-generator)
 - Email: aditir.rai@gmail.com
