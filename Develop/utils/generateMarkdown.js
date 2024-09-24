@@ -82,7 +82,7 @@ function generateMarkdown(questions) {
   ${renderLicenseLink(questions.license)};
   ## Questions
   If you have any further questions, please contact me at:
-  - GitHub: ${questions.github}
+  - GitHub: [${questions.github}] (#github)
   - Email: ${questions.email}`;
 }
 
