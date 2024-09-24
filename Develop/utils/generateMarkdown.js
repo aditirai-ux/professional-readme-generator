@@ -55,18 +55,22 @@ function generateMarkdown(questions) {
   ## Description
   ${questions.description};
   ## Table of Contents
-    - Installation
-    - Usage
-    - Credits
-    - License
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [License](#license)
   ## Installation
   ${questions.installation}
   ## Usage 
   ${questions.usage}
   ## Credits
-   This project was created by ${
-     questions.contribution
-   } for the CU Coding Bootcamp.
+   This project was created by ${questions.credit} for the CU Coding Bootcamp.
+  ## Contributing
+  ${questions.contribution}
+  ## Tests
+  ${questions.test}
   ## License
   ${renderLicenseSection(questions.license)};
   ${renderLicenseBadge(questions.license)};

@@ -27,8 +27,18 @@ const questions = [
   },
   {
     type: "input",
+    message: "Who created the content?",
+    name: "credit",
+  },
+  {
+    type: "input",
     message: "What are the contribution guidelines?",
     name: "contribution",
+  },
+  {
+    type: "input",
+    message: "What are the test instructions?",
+    name: "test",
   },
   {
     type: "list",
