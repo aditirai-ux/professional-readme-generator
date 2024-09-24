@@ -61,6 +61,7 @@ function generateMarkdown(questions) {
     - [Contributing](#contributing)
     - [Tests](#tests)
     - [License](#license)
+    - [Questions](#questions)
   ## Installation
   ${questions.installation}
   ## Usage 
@@ -75,8 +76,9 @@ function generateMarkdown(questions) {
   ${renderLicenseSection(questions.license)};
   ${renderLicenseBadge(questions.license)};
   ${renderLicenseLink(questions.license)};
-  ## Contact
-    - GitHub: ${questions.github}
+  ## Questions
+  If you have any further questions, please contact me at:
+    - GitHub: [Github](#${questions.github})
     - Email: ${questions.email}`;
 }
 
