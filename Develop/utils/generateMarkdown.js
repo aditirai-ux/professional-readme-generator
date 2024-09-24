@@ -55,24 +55,30 @@ function generateMarkdown(questions) {
   ## Description
   ${questions.description};
   ## Table of Contents
-    - Installation
-    - Usage
-    - Credits
-    - License
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [License](#license)
+    - [Questions](#questions)
   ## Installation
   ${questions.installation}
   ## Usage 
   ${questions.usage}
   ## Credits
-   This project was created by ${
-     questions.contribution
-   } for the CU Coding Bootcamp.
+   This project was created by ${questions.credit} for the CU Coding Bootcamp.
+  ## Contributing
+  ${questions.contribution}
+  ## Tests
+  ${questions.test}
   ## License
   ${renderLicenseSection(questions.license)};
   ${renderLicenseBadge(questions.license)};
   ${renderLicenseLink(questions.license)};
-  ## Contact
-    - GitHub: ${questions.github}
+  ## Questions
+  If you have any further questions, please contact me at:
+    - GitHub: [Github](#${questions.github})
     - Email: ${questions.email}`;
 }
 
