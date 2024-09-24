@@ -23,10 +23,10 @@
   ## Tests
   After entering all the answers to the prompts, a markdown file will be generated. Right click the file and click on “Open Preview” to see the final file. To make any changes, restart the app by following the installation instructions and change the answers/ inputs
   ## License
-  This project is licensed under the MIT license.;
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg);
-  [MIT](https://opensource.org/licenses/MIT);
+  This project is licensed under the Apache 2.0 license.;
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg);
+  [Apache 2.0](https://opensource.org/licenses/Apache-2.0);
   ## Questions
   If you have any further questions, please contact me at:
-  - GitHub: [Github Profile] aditirai-ux (https://github.com/aditirai-ux/professional-readme-generator)
+  - GitHub: aditirai-ux
   - Email: aditir.rai@gmail.com
