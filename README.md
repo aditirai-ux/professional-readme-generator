@@ -6,13 +6,13 @@ This application develops a template for a professional README file, which is an
 
 ## Table of Contents
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [License](#license)
-    - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
@@ -24,7 +24,7 @@ This app can be a go-to for developers to create a README file, whenever a user 
 
 ## Credits
 
-This project was created by Aditi Rai for the CU Coding Bootcamp.
+This project was created by Aditi Rai for the CU Coding Bootcamp. The headings and structure of readme file has been taken from: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide. Reference for license badge and links is: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba.
 
 ## Contributing
 
@@ -36,10 +36,13 @@ After entering all the answers to the prompts, a markdown file will be generated
 
 ## License
 
-This project is licensed under the GNU GPLv3 license.;
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg);
-[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0);
+This project is licensed under the Apache 2.0 license.;
+![License](https://img.shields.io/badge/License-MIT-yellow.svg);
+[MIT](https://opensource.org/licenses/MIT);
 
 ## Questions
 
-If you have any further questions, please contact me at: - GitHub: ([aditirai-ux] (https://github.com/aditirai-ux/professional-readme-generator)) - Email: aditi45@gmail.com
+If you have any further questions, please contact me at:
+
+- GitHub: aditirai-ux
+- Email: aditir.rai@gmail.com
